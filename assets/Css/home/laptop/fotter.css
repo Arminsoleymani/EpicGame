@@ -163,3 +163,16 @@ a,
 button {
   transition: all 0.15s ease;
 }
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-direction: row;
+}
+
+.social svg {
+  width: 24px;
+  height: 24px;
+  fill: #9e9e9e;
+}
