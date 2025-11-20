@@ -1,0 +1,291 @@
+.footer-wrap {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 10px;
+  background-color: #18181c;
+}
+
+.footer-top {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.brand {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.brand h2 {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+/* ستون‌ها - Desktop */
+.cols {
+  padding-top: 32px;
+  display: flex;
+  flex: 1;
+  gap: 28px;
+  flex-wrap: wrap;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.col {
+  flex: 1;
+  flex-basis: 30%;
+}
+
+.col h3 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.col ul {
+  list-style: none;
+  padding: 0px !important;
+}
+
+.col li {
+  margin: 8px 0;
+}
+
+.col a {
+  color: #bdbdbd;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.col a:hover {
+  color: #fff;
+}
+
+/* Accordion styles for mobile */
+@media (max-width: 767px) {
+  .cols.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .accordion-item {
+    background-color: transparent;
+    border: none;
+  }
+
+  .accordion-header {
+    margin: 0;
+  }
+
+  .accordion-button {
+    width: 100%;
+    padding: 20px 0;
+    background-color: transparent;
+    border: none;
+    color: #9e9e9e;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.15s ease;
+  }
+
+  .accordion-button:hover {
+    color: #fff;
+  }
+
+  /* Active/Open state */
+  .accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .accordion-button.collapsed {
+    color: #9e9e9e;
+  }
+
+  .accordion-button:focus,
+  .accordion-button:focus-visible {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .accordion-button::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-right: 2px solid #9e9e9e;
+    border-bottom: 2px solid #9e9e9e;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease, border-color 0.15s ease;
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    transform: rotate(-135deg);
+    border-color: #fff;
+  }
+
+  /* Smooth collapse animation */
+  .accordion-collapse {
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+  }
+
+  .accordion-collapse.show {
+    max-height: 2000px;
+    opacity: 1;
+  }
+
+  .accordion-body {
+    padding: 0 0 20px 0;
+    animation: fadeInUp 0.4s ease forwards;
+  }
+
+  /* Fade in animation for content */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .accordion-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .accordion-body ul li {
+    margin: 0;
+    animation: fadeIn 0.3s ease forwards;
+    animation-delay: calc(var(--item-index, 0) * 0.05s);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .accordion-body ul li a {
+    color: #bdbdbd;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.15s ease;
+  }
+
+  .accordion-body ul li a:hover {
+    color: #fff;
+  }
+}
+
+/* متن حقوق و لینک‌های زیرین */
+.footer-bottom {
+  padding: 28px 0;
+  color: #9e9e9e;
+  font-size: 13px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-bottom .copyright {
+  max-width: 78%;
+  display: inline-block;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem 1.5rem;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  margin-left: 16px;
+  color: #9e9e9e;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* دکمه Back to top */
+.back-to-top {
+  position: absolute;
+  right: calc(50% - 64px);
+  bottom: -24px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 14px 14px;
+  color: #eaeaea;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  gap: 10px;
+  border: none;
+}
+
+.back-to-top.hidden {
+  display: none;
+}
+
+a,
+button {
+  transition: all 0.15s ease;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-direction: row;
+}
+
+.social svg {
+  width: 24px;
+  height: 24px;
+  fill: #9e9e9e;
+}
+
+.accordion-button.collapsed {
+  color: #fff;
+}

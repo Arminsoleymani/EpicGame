@@ -25,7 +25,7 @@ header .top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 40px;
+  padding: 16px 15px;
   transition: transform 0.4s ease, opacity 0.4s ease;
   background-color: rgba(22, 22, 28, 0.7);
 }
@@ -38,11 +38,11 @@ header.compact .top-bar {
 header .top-left {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 12px;
   font-size: 14px;
   font-weight: 500;
 }
-header .top-left .distribute{
+header .top-left .distribute {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,7 +50,7 @@ header .top-left .distribute{
   gap: 4px;
   position: relative;
 }
-.distribute:hover .submenu{
+.distribute:hover .submenu {
   display: flex !important;
   transform: translateY(0);
   opacity: 1;
@@ -58,13 +58,15 @@ header .top-left .distribute{
   width: 200px;
   height: auto;
 }
-.distribute .submenu{
+.distribute .submenu {
   display: none;
   background: rgba(5, 5, 217, 0.7);
   backdrop-filter: blur(50px);
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, .1);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 32px 16px, rgba(0, 0, 0, 0.1) 0px 16px 8px, rgba(0, 0, 0, 0.1) 0px 8px 4px, rgba(0, 0, 0, 0.1) 0px 4px 2px, rgba(0, 0, 0, 0.1) 0px 2px 1px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 32px 16px, rgba(0, 0, 0, 0.1) 0px 16px 8px,
+    rgba(0, 0, 0, 0.1) 0px 8px 4px, rgba(0, 0, 0, 0.1) 0px 4px 2px,
+    rgba(0, 0, 0, 0.1) 0px 2px 1px;
 }
 header .top-left .img {
   height: 28px;
@@ -86,11 +88,13 @@ header .top-left img {
 
 header .top-left .submenu {
   display: none;
-  background: rgba(48, 48, 52, .7);
+  background: rgba(48, 48, 52, 0.7);
   backdrop-filter: blur(50px);
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, .1);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 32px 16px, rgba(0, 0, 0, 0.1) 0px 16px 8px, rgba(0, 0, 0, 0.1) 0px 8px 4px, rgba(0, 0, 0, 0.1) 0px 4px 2px, rgba(0, 0, 0, 0.1) 0px 2px 1px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 32px 16px, rgba(0, 0, 0, 0.1) 0px 16px 8px,
+    rgba(0, 0, 0, 0.1) 0px 8px 4px, rgba(0, 0, 0, 0.1) 0px 4px 2px,
+    rgba(0, 0, 0, 0.1) 0px 2px 1px;
   max-height: 37.5rem;
   width: 38.75rem;
   position: absolute;
@@ -99,12 +103,11 @@ header .top-left .submenu {
   /* padding: 32px 40px; */
   z-index: 999;
 }
-.distribute p{
+.distribute p {
   margin-bottom: 0px !important;
-  
 }
 .distribute::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%;
   left: -30px;
@@ -114,29 +117,28 @@ header .top-left .submenu {
   display: none;
 }
 .distribute::before {
-  content: '';
-
+  content: "";
 }
 
 .distribute:hover::before {
   display: block;
 }
-header .top-left .img{
+header .top-left .img {
   /* width: 200px; */
   display: flex;
   align-items: flex-start;
   flex-direction: row;
   gap: 4px;
 }
-header .top-left .img img{
+header .top-left .img img {
   width: 32px;
   height: 32px;
 }
-header .top-left .img:hover svg{
+header .top-left .img:hover svg {
   rotate: 0deg;
   transition: rotate 0.4s ease;
 }
-header .top-left .img svg{
+header .top-left .img svg {
   rotate: -180deg;
   height: 12px;
   width: 12px;
@@ -145,7 +147,7 @@ header .top-left .img svg{
 }
 /* پل نامرئی بین لوگو و منو */
 header .top-left .img::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%;
   left: -30px;
@@ -155,14 +157,13 @@ header .top-left .img::before {
   display: none;
 }
 header .top-left .img::before {
-  content: '';
-
+  content: "";
 }
 
 header .top-left .img:hover::before {
   display: block;
 }
-header .submenu > ul{
+header .submenu > ul {
   padding: 0px 40px 0px 40px;
 }
 header .submenu > div,
@@ -174,13 +175,12 @@ header .submenu > ul {
   justify-content: center; /* مرکز کردن عمودی */
   min-height: 0; /* برای flex کار کردن درست */
   /* padding: 32px 40px; */
-  
 }
 
 /* خط عمودی جداکننده سمت راست */
 header .submenu > div::after,
 header .submenu > ul:not(:last-child)::after {
-  content: '';
+  content: "";
   position: absolute;
   right: -12px;
   top: 0;
@@ -191,7 +191,7 @@ header .submenu > ul:not(:last-child)::after {
 
 /* خط افقی بین Play/Discover */
 header .submenu > div > ul:last-child::after {
-  content: '';
+  content: "";
   position: absolute;
   /* bottom: -12px; */
   left: 0;
@@ -214,14 +214,14 @@ header .submenu ul {
 }
 
 header .submenu ul p {
-    font-weight: 700;
-    line-height: 120%;
-    font-size: 20px;
-    color:  #ffffff;
-    margin-top: 40px;
-    letter-spacing: -0.01875rem;
-    padding-top: 32px;
-    padding-bottom: 8px;
+  font-weight: 700;
+  line-height: 120%;
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 40px;
+  letter-spacing: -0.01875rem;
+  padding-top: 32px;
+  padding-bottom: 8px;
 }
 
 header .submenu ul li {
@@ -241,12 +241,11 @@ header .submenu ul li a {
   text-decoration: none;
   transition: color 0.2s;
 }
-header .submenu ul li a .logo{
+header .submenu ul li a .logo {
   width: 24px;
   height: 24px;
   margin-right: 8px;
 }
-
 
 header .top-left a {
   text-decoration: none;
@@ -256,11 +255,6 @@ header .top-left a {
 header .top-left a:hover {
   color: #c5c4c4;
   transition: color 0.3s ease;
-}
-
-header .top-left a:hover img {
-  filter: brightness(0.8);
-  transition: filter 0.3s ease;
 }
 
 header .top-right {
@@ -281,7 +275,7 @@ header .top-right button svg {
   height: 24px;
 }
 header .top-right .sign-in-btn {
-  background-color: rgba(255, 255, 255, .15);
+  background-color: rgba(255, 255, 255, 0.15);
   padding: 5px 14px;
   border-radius: 6px;
   color: #fff;
@@ -326,10 +320,10 @@ header.compact .bottom-bar {
 header .search-box {
   display: flex;
   align-items: center;
-  background-color: #1e1e1f;
+  /* background-color: #1e1e1f; */
   border-radius: 40px;
-  padding: 8px 14px;
-  width: 260px;
+  /* padding: 8px 14px; */
+  /* width: 260px; */
   transition: background 0.3s ease;
 }
 
@@ -352,8 +346,8 @@ header .search-box input::placeholder {
 }
 
 header .search-box svg {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   stroke: #bfbfbf;
 }
 
@@ -362,6 +356,7 @@ header .nav-links {
   display: flex;
   align-items: center;
   gap: 24px;
+  margin-left: 20vw;
 }
 
 header .nav-links a {
@@ -375,11 +370,26 @@ header .nav-links a.active {
   color: rgb(255, 255, 255);
 }
 
-header .nav-links a:hover {
-  color: rgb(255, 255, 255);
+/* Mobile menu toggle button */
+.mobile-menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px;
 }
 
+@media (max-width: 767px) {
+  .mobile-menu-toggle {
+    display: block;
+  }
 
+  /* Hide desktop menu on mobile */
+  .top-bar .top-left .img .submenu {
+    display: none !important;
+  }
+}
 /* Offcanvas from top - Full screen */
 .offcanvas {
   position: fixed;

@@ -1,5 +1,6 @@
-@import url(./home/desktop/main.css) screen and (min-width: 1024px);
-@import url(./home/laptop/main.css) screen and (min-width: 768px) and (max-width: 1024px);
+@import url(./home/desktop/main.css) only screen and (min-width: 1024px);
+@import url(./home/laptop/main.css) only screen and (min-width: 768px) and (max-width: 1024px);
+@import url(./home/mobile/main.css) only screen and (max-width: 768px);
 @import url(./setting.css);
 
 /* * {

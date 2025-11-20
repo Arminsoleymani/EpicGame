@@ -6,3 +6,6 @@
 @import url(./news.css);
 @import url(./prices.css);
 @import url(./colslider.css);
+.dd{
+    display: none !important;
+}

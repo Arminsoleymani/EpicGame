@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/Css/main.css" />
-    <link rel="stylesheet" href="./assets/Css/home/desktop/header.css" />
     <link
       rel="shortcut icon"
       href="https://static-assets-prod.epicgames.com/epic-store/static/webpack/../favicon.ico"
@@ -38,8 +37,8 @@
         <a href="#">
           <img src="./assets/images/LogoEpicGamesStore.svg" alt="" />
         </a>
-        <a href="#">Support</a>
-        <a href="#" class="distribute">
+        <a href="#" class="md">Support</a>
+        <a href="#" class="distribute md">
           <p>Distribute</p>
           <div class="submenu">
             <ul>
@@ -52,7 +51,11 @@
       </div>
       <div class="top-right">
         <button>
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="md"
+          >
             <path
               fill="#fff"
               fill-rule="evenodd"
@@ -61,7 +64,7 @@
             ></path>
           </svg>
         </button>
-        <button class="sign-in-btn">Sign in</button>
+        <button class="sign-in-btn md">Sign in</button>
         <button class="download-btn">Download</button>
       </div>
     </div>
@@ -79,13 +82,13 @@
           <circle cx="11" cy="11" r="8" />
           <path d="m21 21-4.3-4.3" />
         </svg>
-        <input type="text" placeholder="Search store" />
+        <input type="text" placeholder="Search store" class="md" />
       </div>
 
       <nav class="nav-links">
         <a href="#" class="active">Discover</a>
-        <a href="#">Browse</a>
-        <a href="#">News</a>
+        <a href="#" class="md">Browse</a>
+        <a href="#" class="md">News</a>
       </nav>
     </div>
   </header>
@@ -96,10 +99,11 @@
           <div class="swiper-wrapper"></div>
         </div>
 
-        <div thumbsSlider="" class="swiper mySwiper swiper-thumbs">
+        <div thumbsSlider="" class="swiper mySwiper swiper-thumbs md">
           <div class="swiper-wrapper"></div>
         </div>
       </div>
+      <div class="swiper-pagination dd ld"></div>
     </div>
     <!-- slider1 -->
     <div class="container">
@@ -117,7 +121,7 @@
     </div>
 
     <div class="newsbox n1"></div>
-        <!-- slider7 -->
+    <!-- slider7 -->
     <div class="container">
       <div class="header">
         <h2 class="title">Epic Savings Spotlight</h2>
@@ -371,7 +375,6 @@
       </div>
     </div>
     <div class="newsbox n5"></div>
-    
 
     <div class="colslider s2">
       <div class="col">
@@ -807,7 +810,7 @@
         <div class="swiper-wrapper"></div>
       </div>
     </div>
-        <!-- slider2 -->
+    <!-- slider2 -->
     <!-- <div class="container">
       <div class="header">
         <h2 class="title">Epic Savings Spotlight</h2>
@@ -836,32 +839,36 @@
               aria-label="Facebook"
               title="Facebook"
               style="color: #9e9e9e; text-decoration: none"
-              >
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="m17.01 12.25.555-3.62h-3.473V6.282c0-.99.485-1.956 2.04-1.956h1.58V1.245S16.279 1 14.909 1c-2.86 0-4.73 1.734-4.73 4.872V8.63H7v3.62h3.18V21h3.912v-8.75z"></path>
-</svg>
-              </a
             >
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m17.01 12.25.555-3.62h-3.473V6.282c0-.99.485-1.956 2.04-1.956h1.58V1.245S16.279 1 14.909 1c-2.86 0-4.73 1.734-4.73 4.872V8.63H7v3.62h3.18V21h3.912v-8.75z"
+                ></path>
+              </svg>
+            </a>
             <a
               href="#"
               aria-label="X"
               title="X"
               style="color: #9e9e9e; text-decoration: none"
-              >
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="M13.712 10.622 20.413 3h-1.588l-5.818 6.618L8.36 3H3l7.027 10.007L3 21h1.588l6.144-6.989L15.64 21H21zm-2.174 2.474-.713-.997L5.16 4.17H7.6l4.571 6.4.712.996 5.943 8.319h-2.439z"></path>
-</svg>
-              </a
             >
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.712 10.622 20.413 3h-1.588l-5.818 6.618L8.36 3H3l7.027 10.007L3 21h1.588l6.144-6.989L15.64 21H21zm-2.174 2.474-.713-.997L5.16 4.17H7.6l4.571 6.4.712.996 5.943 8.319h-2.439z"
+                ></path>
+              </svg>
+            </a>
             <a
               href="#"
               aria-label="YouTube"
               title="YouTube"
               style="color: #9e9e9e; text-decoration: none"
               ><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="M21.8 8.035s-.195-1.379-.796-1.984c-.762-.797-1.613-.801-2.004-.848C16.203 5 12.004 5 12.004 5h-.008S7.796 5 5 5.203c-.39.047-1.242.05-2.004.848-.601.605-.793 1.984-.793 1.984S2 9.656 2 11.273v1.516c0 1.617.2 3.238.2 3.238s.195 1.38.792 1.985c.762.797 1.762.77 2.207.855 1.602.152 6.801.2 6.801.2s4.203-.008 7-.208c.39-.047 1.242-.05 2.004-.847.601-.606.797-1.985.797-1.985S22 14.41 22 12.79v-1.516c0-1.617-.2-3.238-.2-3.238M9.935 14.63V9.008l5.402 2.82z"></path>
-</svg></a
-            >
+                <path
+                  d="M21.8 8.035s-.195-1.379-.796-1.984c-.762-.797-1.613-.801-2.004-.848C16.203 5 12.004 5 12.004 5h-.008S7.796 5 5 5.203c-.39.047-1.242.05-2.004.848-.601.605-.793 1.984-.793 1.984S2 9.656 2 11.273v1.516c0 1.617.2 3.238.2 3.238s.195 1.38.792 1.985c.762.797 1.762.77 2.207.855 1.602.152 6.801.2 6.801.2s4.203-.008 7-.208c.39-.047 1.242-.05 2.004-.847.601-.606.797-1.985.797-1.985S22 14.41 22 12.79v-1.516c0-1.617-.2-3.238-.2-3.238M9.935 14.63V9.008l5.402 2.82z"
+                ></path>
+              </svg>
+            </a>
           </div>
         </div>
 
@@ -869,74 +876,14 @@
       </div>
 
       <div class="footer-bottom">
-        <!-- <p class="copyright">
-          © 2025, Epic Games, Inc. All rights reserved. Epic, Epic Games, the
-          Epic Games logo, Fortnite, the Fortnite logo, Unreal, Unreal Engine,
-          the Unreal Engine logo, Unreal Tournament, and the Unreal Tournament
-          logo are trademarks or registered trademarks of Epic Games, Inc. in
-          the United States of America and elsewhere. Other brands or product
-          names are the trademarks of their respective owners. Our websites may
-          contain links to other sites and resources provided by third parties.
-          These links are provided for your convenience only. Epic Games has no
-          control over the contents of those sites or resources, and accepts no
-          responsibility for them or for any loss or damage that may arise from
-          your use of them.
-        </p>
-
-        <div class="footer-links" aria-hidden="false">
-          <a href="#">Terms of service</a>
-          <a href="#">Privacy policy</a>
-          <a href="#">Safety & security</a>
-          <a href="#">Store refund policy</a>
-          <a href="#">Publisher Index</a>
-          <a href="#">Cookies Settings</a>
-        </div> -->
+        <button class="back-to-top">
+          <span>Back to top</span>
+          ▲
+        </button>
       </div>
     </div>
 
-    <button id="backToTop" class="back-to-top hidden" aria-label="Back to top">
-      ▲
-      <span style="font-size: 13px; margin-left: 6px">Back to top</span>
-    </button>
     <script type="module" src="./assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- <script>
-      function toggleMenu() {
-        const menu = document.getElementById("megaMenu");
-        const overlay = document.getElementById("overlay");
-        menu.classList.toggle("active");
-        overlay.classList.toggle("active");
-      }
-
-      function closeMenu() {
-        const menu = document.getElementById("megaMenu");
-        const overlay = document.getElementById("overlay");
-        menu.classList.remove("active");
-        overlay.classList.remove("active");
-      }
-    </script> -->
-
-    <script>
-      // نمایش/مخفی کردن دکمه بر اساس اسکرول
-    </script>
-    <script>
-      const header = document.getElementById("mainHeader");
-
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 50) {
-          header.classList.remove("expanded");
-          header.classList.add("compact");
-        } else {
-          header.classList.remove("compact");
-          header.classList.add("expanded");
-        }
-      });
-    </script>
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
-    <script type="module">
-      // import discoverslider from "./assets/js/discoverslider.js";
-    </script>
   </body>
 </html>

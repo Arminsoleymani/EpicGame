@@ -5,12 +5,12 @@ let footerbt = async () => {
     const res = await fetch('https://arminsoleymani.github.io/EG-DB/db.json');
     const data = await res.json();
     
-    Footerend.innerHTML = `
+    Footerend.insertAdjacentHTML('beforeend', `
         <p class="copyright">${data.footerend.desc}</p>
         <div class="footer-links" aria-hidden="false">
             ${data.footerend.items.map(item => `<a href="#">${item}</a>`).join('')}
         </div>
-    `;
+    `);
   } catch (error) {
     console.error('Error fetching footer data:', error);
   }
