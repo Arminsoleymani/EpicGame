@@ -35,20 +35,19 @@ async function createSlider(swiperClass, endpoint) {
 }
 
 async function initSlider(swiperClass, endpoint) {
+  // Check if slider exists FIRST, before doing anything
   const swiperEl = document.querySelector(swiperClass);
   
-  // Check if slider exists on this page
   if (!swiperEl) {
-    console.log(`Slider ${swiperClass} not found on this page`);
-    return;
+    return; // Exit early if slider doesn't exist on this page
   }
 
+  // Now create the slider content
   await createSlider(swiperClass, endpoint);
   
   // Find parent container
   const container = swiperEl.closest('.container');
   
-  // Safety check for container too
   if (!container) {
     console.error(`Container not found for ${swiperClass}`);
     return;
