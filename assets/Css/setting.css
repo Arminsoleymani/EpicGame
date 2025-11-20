@@ -8,13 +8,12 @@
 }
 
 @font-face {
-    font-family: InterRegular;
-    src: url(../fonts/Inter-Regular.eot);
-    src: url(../fonts/Inter-Regular.ttf);
-    src: url(../fonts/Inter-Regular.woff);
-    src: url(../fonts/Inter-Regular.woff2);
-}
-
+       font-family: InterRegular;
+       src: url(../fonts/Inter-Regular.woff2) format('woff2'),
+            url(../fonts/Inter-Regular.woff) format('woff'),
+            url(../fonts/Inter-Regular.ttf) format('truetype'),
+            url(../fonts/Inter-Regular.eot) format('embedded-opentype');
+   }
 
 p{
     margin: 0px !important;
