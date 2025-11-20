@@ -186,6 +186,14 @@
     font-size: 18px;
   }
 }
+
+@media (min-width: 768px) {
+    .container, .container-md, .container-sm {
+        max-width: 98% !important;
+    }
+}
+
+
 .swiper-button-disabled {
   opacity: 0.35;
   cursor: not-allowed;
