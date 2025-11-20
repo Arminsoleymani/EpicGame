@@ -7,18 +7,18 @@
     text-decoration: none;
 }
 
+@font-face {
+    font-family: InterRegular;
+    src: url(../fonts/Inter-Regular.eot);
+    src: url(../fonts/Inter-Regular.ttf);
+    src: url(../fonts/Inter-Regular.woff);
+    src: url(../fonts/Inter-Regular.woff2);
+}
+
+
 p{
     margin: 0px !important;
 }
-
-@font-face {
-    font-family: InterRegular;
-    src: url(../Fonts/Inter-Regular.eot);
-    src: url(../Fonts/Inter-Regular.ttf);
-    src: url(../Fonts/Inter-Regular.woff);
-    src: url(../Fonts/Inter-Regular.woff2);
-}
-
 
 html, body {
     overflow-x: hidden;
