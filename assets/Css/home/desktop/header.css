@@ -247,14 +247,6 @@ header .submenu ul li a .logo{
   margin-right: 8px;
 }
 
-header .submenu ul li a:hover {
-  color: #0078f2;
-}
-
-header .submenu ul li:hover {
-  color: #007aff;
-}
-
 header .top-left a {
   text-decoration: none;
   color: #fff;
@@ -293,6 +285,11 @@ header .top-right .sign-in-btn {
   border-radius: 6px;
   color: #fff;
   font-weight: 600;
+}
+
+header .top-right .sign-in-btn:hover {
+  background-color: rgba(255, 255, 255, 0.266);
+  transition: background-color 0.3s ease;
 }
 
 header .top-right .download-btn {
