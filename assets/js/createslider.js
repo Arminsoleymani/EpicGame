@@ -35,11 +35,24 @@ async function createSlider(swiperClass, endpoint) {
 }
 
 async function initSlider(swiperClass, endpoint) {
+  const swiperEl = document.querySelector(swiperClass);
+  
+  // Check if slider exists on this page
+  if (!swiperEl) {
+    console.log(`Slider ${swiperClass} not found on this page`);
+    return;
+  }
+
   await createSlider(swiperClass, endpoint);
   
-  // پیدا کردن container والد
-  const swiperEl = document.querySelector(swiperClass);
+  // Find parent container
   const container = swiperEl.closest('.container');
+  
+  // Safety check for container too
+  if (!container) {
+    console.error(`Container not found for ${swiperClass}`);
+    return;
+  }
 
   new Swiper(swiperClass, {
     slidesPerView: 1.5,
