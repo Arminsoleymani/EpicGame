@@ -1,0 +1,21 @@
+{
+  "name": "epicgames",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "json": "json-server --watch db.json --port 5000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "json-server": "^1.0.0-beta.3",
+    "swiper": "^12.0.2"
+  },
+  "devDependencies": {
+    "serve": "^14.2.5"
+  }
+}

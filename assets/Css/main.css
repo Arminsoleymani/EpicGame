@@ -1,0 +1,88 @@
+@import url(./home/desktop/main.css) screen and (min-width: 1024px);
+@import url(./home/laptop/main.css) screen and (min-width: 768px) and (max-width: 1024px);
+@import url(./setting.css);
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0e0e0e;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.hero-slider {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity 1s ease, transform 5s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.3));
+}
+
+.content {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  max-width: 550px;
+  z-index: 2;
+  animation: fadeUp 1.5s ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.logo {
+  width: 220px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 5px 0 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #ff3333;
+  color: #fff;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+} */

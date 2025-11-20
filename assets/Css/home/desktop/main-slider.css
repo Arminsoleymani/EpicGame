@@ -1,0 +1,261 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.mySwiper2 {
+  border-radius: 12px;
+}
+.swiper-slide .slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ساختار کلی: اسلایدر اصلی + اسلایدر کوچک سمت راست */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  margin-top: 100px;
+}
+
+.mySwiper2 {
+  /* flex: 1; */
+  height: 100%;
+  flex-basis: calc(100% - (180px + 20px)) !important;
+}
+
+.mySwiper {
+  /* width: 256px;
+      height: 100%; */
+  margin-left: 10px;
+  flex-basis: 180px;
+}
+
+/* تنظیم ظاهر تصاویر کوچک */
+.mySwiper .swiper-slide {
+  height: auto;
+  /* opacity: 0.4; */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mySwiper .swiper-slide span {
+  max-width: 100px;
+  height: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* پراگرس بار برای کارت فعال */
+.mySwiper .swiper-slide-thumb-active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #404044da 50%,
+    #4040449d 100%
+  );
+  animation: progressBar 5s linear forwards;
+  z-index: -10;
+}
+
+@keyframes progressBar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.mySwiper .swiper-slide:hover {
+  background-color: rgb(64, 64, 68);
+  transition: 0.3s;
+}
+
+/* پنهان کردن دکمه‌های ناوبری پیش‌فرض */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+}
+.main-container {
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  max-width: 1600px;
+}
+.swiper-slide .img {
+  flex-basis: 40px;
+  margin: 0 15px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 2;
+}
+.swiper-slide .img img {
+  width: 40px;
+  height: 53px;
+  border-radius: 4px;
+}
+.main-container .slider-container .swiper-thumbs .swiper-wrapper .swiper-slide {
+  position: relative;
+}
+.slide-content-container {
+  flex-basis: calc(100% - (40px + 20px));
+  position: absolute;
+  height: 100%;
+  bottom: 0%;
+  padding-bottom: clamp(60px, 8vw, 30px);
+  padding-left: clamp(20px, 3vw, 40px);
+  cursor: pointer;
+  /* opacity: 0.6; */
+  background: linear-gradient(
+    270deg,
+    rgba(11, 11, 11, 0) 0%,
+    #0b0b0bd4 100%,
+    #0b0b0bd4 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  /* transform: translateY(-50%); */
+}
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6px, 1vw, 10px);
+  align-items: flex-start;
+  /* z-index: 10; */
+  opacity: 1;
+  width: 70%;
+}
+.slide-content p {
+  font-size: clamp(12px, 1.2vw, 16px);
+  color: #fff;
+  width: 80%;
+}
+.slide-content h2 {
+  margin-top: clamp(6px, 0.8vw, 10px);
+  font-size: clamp(11px, 1vw, 14px);
+  font-weight: 600;
+  color: #fff;
+}
+
+.slide-content .logo {
+  width: clamp(120px, 15vw, 220px);
+  height: clamp(65px, 8vw, 120px);
+  /* margin-bottom: 40px; */
+}
+.slide-content .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-left: 5px;
+  opacity: 0.6;
+}
+.slide-content .logo img.active {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-left: 5px;
+}
+.slide-content .btn-container {
+  display: flex;
+  gap: clamp(10px, 1.5vw, 20px);
+  padding-top: clamp(12px, 1.5vw, 20px);
+}
+.slide-content .btn1 {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: clamp(7px, 0.8vw, 12px) clamp(14px, 2vw, 26px);
+  color: #000;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  font-size: clamp(11px, 1vw, 14px);
+}
+.slide-content .btn2 {
+  font-size: clamp(11px, 1vw, 14px);
+  background-color: transparent;
+  border-radius: 4px;
+  padding: clamp(7px, 0.8vw, 10px) clamp(14px, 1.5vw, 20px);
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  /* border: 0.8px solid rgba(255, 255, 255, 0.35); */
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(6px, 0.8vw, 10px);
+}
+.slide-content .btn2:hover{
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: 0.1s;
+}
+.slide-content .btn1:hover{
+  background-color: #dbdbdb;
+  transition: 0.1s;
+}
+
+.slide-content .btn2 .plus {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: clamp(16px, 1.5vw, 20px);
+  height: clamp(16px, 1.5vw, 20px);
+  justify-content: center;
+  align-items: center;
+  border: 0.8px solid rgba(255, 255, 255, 0.35);
+  border-radius: 100%;
+  position: relative;
+}
+
+.slide-content .btn2 .plus .line1 {
+  width: clamp(6px, 0.6vw, 8px);
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  
+}
+.slide-content .btn2 .plus .line2 {
+  width: 1px;
+  height: clamp(6px, 0.6vw, 8px);
+  background-color: #fff;
+}
+
+
+/* Logo animation */
+.slide-content .logo img {
+  animation: logoSlideIn 0.8s ease-out forwards;
+}
+
+@keyframes logoSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* For inactive logos */
+.slide-content .logo img.inactive {
+  opacity: 0;
+}

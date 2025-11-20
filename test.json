@@ -1,0 +1,180 @@
+{
+  "slider122": [
+    {
+      "id": 1,
+      "title": "New Releases",
+      "product": [
+        {
+          "id": 1,
+          "title": "Morsels",
+          "imgsrc": "https://cdn1.epicgames.com/spt-assets/9e8b37541e614575b4de303d2c2e44cf/arc-raiders-hrxqv.jpg?resize=1&w=360&h=480&quality=medium",
+          "alt": "Morsels",
+          "href": "#",
+          "off": "-10%",
+          "before": "€14.99",
+          "after": "€13.49"
+        },
+        {
+          "id": 2,
+          "title": "INC.",
+          "imgsrc": "https://cdn1.epicgames.com/offer/a14a02aa3c8143729605eaf7c93d7501/EGS_Battlefield6_BattlefieldStudios_S2_1200x1600-a88625a836120c55650c83d17a010c25?resize=1&w=360&h=480&quality=medium",
+          "alt": "INC.",
+          "href": "#",
+          "off": "-25%",
+          "before": "€3.99",
+          "after": "€2.99",
+          "dis": "Now On Epic"
+        },
+        {
+          "id": 3,
+          "title": "Action Study Runner",
+          "imgsrc": "https://cdn1.epicgames.com/offer/b0cd075465c44f87be3b505ac04a2e46/GTAV_CHARM_Epic_FirstParty_PortraitFOB_1200x1600_R02_1200x1600-a5528b33df876e64f5dee728830c80a3?resize=1&w=360&h=480&quality=medium",
+          "alt": "Action Study Runner",
+          "href": "#",
+          "off": "",
+          "before": "",
+          "after": "€24.50"
+        },
+        {
+          "id": 4,
+          "title": "CET",
+          "imgsrc": "https://cdn1.epicgames.com/epic/offer/RDR2PC1227_Epic%20Games_860x1148-860x1148-b4c2210ee0c3c3b843a8de399bfe7f5c.jpg?resize=1&w=360&h=480&quality=medium",
+          "alt": "CET",
+          "href": "#",
+          "off": "",
+          "before": "",
+          "after": "",
+          "badge": "First Run"
+        },
+        {
+          "id": 5,
+          "title": "Storebound",
+          "imgsrc": "https://cdn1.epicgames.com/offer/77f2b98e2cef40c8a7437518bf420e47/EGS_Cyberpunk2077_CDPROJEKTRED_S2_03_1200x1600-b1847981214ac013383111fc457eb9c5?resize=1&w=360&h=480&quality=medium",
+          "alt": "Storebound",
+          "href": "#",
+          "off": "",
+          "before": "",
+          "after": "€7.19"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Top Player Rated",
+      "product": [
+        {
+          "id": 1,
+          "title": "KINGDOM HEARTS III + Re Mind...",
+          "imgsrc": "https://cdn1.epicgames.com/offer/fn/FNBR_38-00_C6MS2_EGS_Launcher_FN_KeyArt_Blade_1200x1600_1200x1600-6aea04d4241e11f924c91cbe18c42203?resize=1&w=360&h=480&quality=medium",
+          "alt": "KINGDOM HEARTS III",
+          "href": "#",
+          "off": "",
+          "before": "",
+          "after": "€59.99"
+        },
+        {
+          "id": 2,
+          "title": "Dead Cells",
+          "imgsrc": "https://cdn1.epicgames.com/offer/9773aa1aa54f4f7b80e44bef04986cea/EGS_RocketLeague_PsyonixLLC_S2_1200x1600-90239520d8dce4a685c3f642ff9645a1?resize=1&w=360&h=480&quality=medium",
+          "alt": "Dead Cells",
+          "href": "#",
+          "off": "",
+          "before": "",
+          "after": "€24.99"
+        },
+        {
+          "id": 3,
+          "title": "Hades II",
+          "imgsrc": "https://cdn1.epicgames.com/offer/879b0d8776ab46a59a129983ba78f0ce/genshintall_1200x1600-4a5697be3925e8cb1f59725a9830cafc?resize=1&w=360&h=480&quality=medium",
+          "alt": "Hades II",
+          "href": "#",
+          "off": "",
+          "before": "",
+          "after": "€28.99"
+        },
+        {
+          "id": 4,
+          "title": "Clair Obscur: Expedition 33",
+          "imgsrc": "https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S2_1200x1600-4c5338a8b14b8da8d45bd57298128673?resize=1&w=360&h=480&quality=medium",
+          "alt": "Clair Obscur: Expedition 33",
+          "href": "#",
+          "off": "",
+          "before": "",
+          "after": "€49.99"
+        },
+        {
+          "id": 5,
+          "title": "RimWorld",
+          "imgsrc": "https://cdn1.epicgames.com/offer/b0cd075465c44f87be3b505ac04a2e46/GTAV_CHARM_Epic_FirstParty_PortraitFOB_1200x1600_R02_1200x1600-a5528b33df876e64f5dee728830c80a3?resize=1&w=360&h=480&quality=medium",
+          "alt": "RimWorld",
+          "href": "#",
+          "off": "",
+          "before": "",
+          "after": "€31.99"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Coming Soon",
+      "product": [
+        {
+          "id": 1,
+          "title": "AS I BEGAN TO DREAM",
+          "imgsrc": "https://cdn1.epicgames.com/spt-assets/ba63e2527a8c4b768845919c0d6c788e/mongil-star-dive-1je4v.jpg?resize=1&w=360&h=480&quality=medium",
+          "alt": "AS I BEGAN TO DREAM",
+          "href": "#",
+          "off": "",
+          "before": "",
+          "after": "",
+          "dis": "Available 11/20/25"
+        },
+        {
+          "id": 2,
+          "title": "Prologue: Go Wayback!",
+          "imgsrc": "https://cdn1.epicgames.com/spt-assets/2f8a03caff764b6ba175c9ee1784d99b/tides-of-annihilation-2h07l.png?resize=1&w=360&h=480&quality=medium",
+          "alt": "Prologue: Go Wayback!",
+          "href": "#",
+          "off": "",
+          "before": "",
+          "after": "",
+          "dis": "Available 11/20/25"
+        },
+        {
+          "id": 3,
+          "title": "Retrace the Light",
+          "imgsrc": "https://cdn1.epicgames.com/spt-assets/011270e3237f4bf69a3459942f005393/subnautica-2-gpqlh.png?resize=1&w=360&h=480&quality=medium",
+          "alt": "Retrace the Light",
+          "href": "#",
+          "off": "",
+          "before": "",
+          "after": "",
+          "dis": "Available 11/21/25"
+        },
+        {
+          "id": 4,
+          "title": "Akizora Memories - Horizon of...",
+          "imgsrc": "https://cdn1.epicgames.com/spt-assets/950c689c72814c19b60b6976a025e3ce/xociety-s19l3.png?resize=1&w=360&h=480&quality=medium",
+          "alt": "Akizora Memories",
+          "href": "#",
+          "off": "",
+          "before": "",
+          "after": "",
+          "dis": "Available 11/21/25"
+        },
+        {
+          "id": 5,
+          "title": "BLACKHAT espionage",
+          "imgsrc": "https://cdn1.epicgames.com/spt-assets/7e9368ac3f2a47b1950c0f9363cf395e/lowlife-forms-qo62f.png?resize=1&w=360&h=480&quality=medium",
+          "alt": "BLACKHAT espionage",
+          "href": "#",
+          "off": "",
+          "before": "",
+          "after": "",
+          "dis": "Available 11/21/25"
+        }
+      ]
+    }
+  ]
+
+}

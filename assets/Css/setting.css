@@ -1,0 +1,63 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: InterRegular !important;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+p{
+    margin: 0px !important;
+}
+
+@font-face {
+    font-family: InterRegular;
+    src: url(../Fonts/Inter-Regular.eot);
+    src: url(../Fonts/Inter-Regular.ttf);
+    src: url(../Fonts/Inter-Regular.woff);
+    src: url(../Fonts/Inter-Regular.woff2);
+}
+
+
+html, body {
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #8e979e #202020;
+}
+
+body {
+    background-color: rgb(16, 16, 20);
+    color: #fff;
+    /* max-width: 1600px;
+    margin: 0 auto; */
+  }
+
+/* Custom scrollbar for Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #202020;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8e979e;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8e979e;
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #8e979e #202020;
+}
+
+
+

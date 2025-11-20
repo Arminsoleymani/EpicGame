@@ -1,0 +1,134 @@
+.colslider {
+  display: flex;
+  gap: 32px;
+  width: 98%;
+  margin: 100px auto;
+  background-color: rgb(16, 16, 20);
+}
+
+.colslider .title {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.colslider .title:hover::after {
+  transform: translateX(10px);
+  transition: transform 0.3s ease;
+}
+.colslider .title::after {
+  content: "›";
+  font-size: 36px;
+  color: #888;
+  transition: transform 0.3s ease;
+}
+
+.colslider .col {
+  flex: 1;
+}
+
+.colslider .col-content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.colslider .content {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 10px ;
+  border-radius: 8px;
+
+}
+
+.colslider .content:hover {
+  background-color:  rgba(48, 48, 52, 0.5);
+  /* transform: translateY(-5px); */
+  transition: 0.3s ease;
+}
+
+.colslider .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.colslider .name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.colslider .price {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+}
+
+.colslider .box {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.colslider .dis {
+  font-size: 12px;
+  font-weight: 400;
+  color: #888;
+  vertical-align: middle;
+  margin-top: 2px;
+}
+
+.colslider .img {
+  width: 60px;
+  height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.colslider .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.colslider .line {
+  width: 1px;
+  align-self: stretch;
+  background-color:  rgb(64, 64, 68);
+  margin: 6px 0;
+}
+
+.col h3{
+  margin: 0px;
+}
+
+.colslider .content .img .plus{
+  width: 20px;
+  height: 20px;
+  background-color: rgb(16, 16, 20);
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.colslider .content .img .plus::after {
+  content: "+";
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.colslider .content:hover .plus{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}

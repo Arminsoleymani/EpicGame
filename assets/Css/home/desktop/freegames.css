@@ -1,0 +1,103 @@
+.freegames{
+    padding: 20px 40px;
+    margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 75%;
+  max-width: 1600px;
+  background-color: rgb(32, 32, 36);
+  border-radius: 12px;
+}
+.freegames .title button{
+    background-color: transparent;
+    border: 0.8px solid rgba(255, 255, 255, 0.35);
+    border-radius: 8px;
+    padding: 7px 15px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+.freegames .title button:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+
+}
+.freegames .title{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex-basis: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+.freegames .title .left{
+    display: flex;
+    gap: 10px
+}
+.freegames .title p{
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 35px;
+}
+.freegames .title svg{
+    width: 35px;
+    height: 35px;
+}
+
+.freegames .cards{
+    flex-basis: calc(25% - 20px);
+    background-color: rgb(32, 32, 36);
+        cursor: pointer;
+    
+}
+
+.freegames .cards .img{
+    width: 100%;
+}
+.freegames .cards .img .imgtitle{
+    text-align: center;
+    background-color: rgb(38, 187, 255);
+    color: rgb(0, 0, 0);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+
+.freegames .cards .img .secimgtitle{
+    background-color: #000000 !important;
+    color: #fff !important;
+}
+.freegames .cards .img img{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 100%;
+    height: 90%;
+}
+
+.freegames .cards .img img:hover{
+    filter: brightness(1.2);
+    transition: filter 0.3s ease ;
+}
+
+.freegames .cards .title{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.freegames .cards .dis{
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 24px;
+}

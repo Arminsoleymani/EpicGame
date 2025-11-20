@@ -1,0 +1,67 @@
+.newsbox{
+    margin: 100px auto;
+    background-color: rgb(16, 16, 20);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; /* تغییر از flex-start به stretch */
+    justify-content: center;
+    gap: 20px;
+    width: 98%;
+}
+.newsbox .card{
+    background-color: rgb(16, 16, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    flex: 1; /* اضافه شد */
+}
+.newsbox .img{
+    width: 100%;
+    border-radius: 8px;
+    flex-shrink: 0; /* اضافه شد - جلوی فشرده شدن عکس رو میگیره */
+}
+.newsbox .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.newsbox .img img:hover{
+    filter: brightness(1.2);
+    transition: all 0.2s;
+}
+.newsbox .text{
+    padding-top: 20px;
+    width: 100%;
+    background-color: rgb(16, 16, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1; /* این باعث میشه تمام فضای باقیمونده رو بگیره */
+}
+.newsbox .title{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+.newsbox .desc{
+    font-size: 14px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.65);
+    /* min-height رو حذف کن */
+}
+.newsbox .button{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: auto; /* این دکمه رو به ته میفرسته */
+}
