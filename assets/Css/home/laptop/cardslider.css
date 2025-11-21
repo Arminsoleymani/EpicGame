@@ -1,6 +1,7 @@
 .container {
   width: 98%;
   margin: 100px auto;
+  margin-bottom: 0px;
   /* max-height: 00px; */
 }
 
@@ -12,26 +13,22 @@
 }
 
 .container .title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
-.container .title:hover::after {
-  transform: translateX(10px);
-  transition: transform 0.3s ease;
-}
 .container .title::after {
   content: "›";
-  font-size: 36px;
+  font-size: 30px;
   color: #888;
   transition: transform 0.3s ease;
 }
 
 .container .nav-buttons {
-  display: flex;
+  display: none;
   gap: 10px;
 }
 
@@ -50,14 +47,14 @@
   transition: background 0.3s;
 }
 
-.container .nav-btn:hover {
-  background: #3a3a3a;
-}
-
 .container .swiper {
   width: 100%;
   padding-bottom: 20px;
-  max-height: 420px !important;
+  max-height: none !important;
+  height: auto !important;
+}
+.swiper-wrapper{
+    height: auto !important;
 }
 
 .container .swiper-slide {
@@ -66,6 +63,9 @@
 }
 
 .container .game-card {
+  height: auto;
+  display: flex;
+  flex-direction: column;
   background: rgb(16, 16, 20);
   border-radius: 12px;
   overflow: hidden;
@@ -75,23 +75,18 @@
 }
 
 .container .game-image-container {
-  position: relative;
   width: 100%;
-  aspect-ratio: 3/4;
+  aspect-ratio: 3 / 4;  /* or 16/9 depending on your images */
   overflow: hidden;
+  position: relative;
 }
 
+/* Fix image stretching and overflow */
 .container .game-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
-  transition: filter 0.3s, transform 0.3s;
-}
-
-.container .game-card:hover .game-image {
-  filter: brightness(1.3);
-  /* transform: scale(1.05); */
+  max-height: none !important; /* remove max-height limit */
 }
 
 .container .add-icon {
@@ -128,12 +123,9 @@
   height: 8px;
 }
 
-.container .game-card:hover .add-icon {
-  opacity: 1;
-}
-
 .container .game-info {
   padding: 20px 0px;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -200,3 +192,7 @@
   pointer-events: none;
 }
 
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: 100%;
+    }}
